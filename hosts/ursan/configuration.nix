@@ -1,0 +1,33 @@
+{ pkgs, ... }:
+{
+  imports = [
+    ./hardware.nix
+    ../../modules/nix.nix
+    ../../modules/nixpkgs.nix
+    ../../modules/time.nix
+    ../../modules/localisation.nix
+    ../../modules/packages.nix
+    ../../modules/boot.nix
+    ../../modules/networking.nix
+    ../../modules/pipewire.nix
+    ../../modules/desktop.nix
+    ../../modules/flatpak.nix
+    ../../modules/gnome-exclude.nix
+  ];
+
+  networking.hostName = "ursan";
+  
+  users.users.ursan = {
+    isNormalUser = true;
+    description = "Ursan";
+    name = "ursan";
+    home = "/home/ursan";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+  };
+
+  system.stateVersion = "26.05";
+}
+

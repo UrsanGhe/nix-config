@@ -1,0 +1,13 @@
+*
+
+!.gitignore
+
+!hosts/
+!hosts/**/
+
+!modules/
+!modules/**/
+
+!flake.lock
+!*.nix
+!.
