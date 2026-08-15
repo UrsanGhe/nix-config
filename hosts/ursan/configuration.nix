@@ -13,6 +13,7 @@
     ../../modules/desktop.nix
     ../../modules/flatpak.nix
     ../../modules/gnome-exclude.nix
+    ../../modules/nvidia.nix
   ];
 
   networking.hostName = "ursan";

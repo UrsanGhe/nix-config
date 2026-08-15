@@ -10,6 +10,10 @@
     discord
     code-cursor
     claude-code
+    steam
   ];
+  programs.steam = {
+    enable = true;
+  };
 
 }
