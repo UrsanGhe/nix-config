@@ -14,6 +14,7 @@
     ../../modules/flatpak.nix
     ../../modules/gnome-exclude.nix
     ../../modules/nvidia.nix
+    ../../modules/home-manager.nix
   ];
 
   networking.hostName = "ursan";
@@ -27,6 +28,13 @@
       "networkmanager"
       "wheel"
     ];
+  };
+
+  home-manager.users.ursan = {
+    home = {
+      homeDirectory = "/home/ursan";
+      stateVersion = "26.05";
+    };
   };
 
   system.stateVersion = "26.05";
