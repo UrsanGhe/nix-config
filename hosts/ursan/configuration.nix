@@ -15,6 +15,7 @@
     ../../modules/gnome-exclude.nix
     ../../modules/nvidia.nix
     ../../modules/home-manager.nix
+    ../../modules/niri.nix
   ];
 
   networking.hostName = "ursan";
