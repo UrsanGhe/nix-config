@@ -11,6 +11,7 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
   boot.kernelParams = [
+    "nvidia-drm.modeset=1"
     "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
   ];
 }
