@@ -16,6 +16,7 @@
     ../../modules/nvidia.nix
     ../../modules/home-manager.nix
     ../../modules/niri.nix
+    ../../modules/tuigreet.nix
   ];
 
   networking.hostName = "ursan";
