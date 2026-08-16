@@ -9,9 +9,6 @@
 
     niri.url = "github:sodiboo/niri-flake";
     niri.inputs.nixpkgs.follows = "nixpkgs";
-  
-    tuigreet.url = "github:NotAShelf/tuigreet";
-    tuigreet.inputs.nixpkgs.follows = "nixpkgs";
 
   };
 
