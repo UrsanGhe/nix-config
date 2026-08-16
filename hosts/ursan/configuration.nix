@@ -17,6 +17,7 @@
     ../../modules/home-manager.nix
     ../../modules/niri.nix
     ../../modules/tuigreet.nix
+    ../../modules/noctalia.nix
   ];
 
   networking.hostName = "ursan";

@@ -20,8 +20,14 @@
   home-manager.sharedModules = [
     {
       programs.niri = {
+
         package = pkgs.niri-stable;
         settings = {
+  
+          spawn-at-startup = [
+            { command = [ "noctalia-shell" ]; }
+          ];
+          
           prefer-no-csd = true;
          
           input.keyboard.xkb.layout = "us";
@@ -49,7 +55,7 @@
 	  };
 	  
 	  binds = {
-	    "Super+Space".action.spawn = "fuzzel";
+	    "Super+Space".action.spawn-sh = "noctalia msg panel-toggle launcher";
  	    "Super+Return".action.spawn = "alacritty";
  	    "Super+Q".action.close-window = { };
  	    "Super+Left".action.focus-column-left = { };
