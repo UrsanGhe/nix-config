@@ -13,10 +13,12 @@
     wl-clipboard
     grim
     slurp
+    xwayland-satellite-stable
   ];
 
   services.libinput.enable = true;
-  
+  programs.xwayland.enable = true;
+
   home-manager.sharedModules = [
     {
       programs.niri = {

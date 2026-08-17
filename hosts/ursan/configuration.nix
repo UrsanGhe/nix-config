@@ -20,6 +20,7 @@
     ../../modules/noctalia.nix
     ../../modules/stylix.nix
     ../../modules/ghostty.nix
+    ../../modules/xdg.nix
   ];
 
   networking.hostName = "ursan";
