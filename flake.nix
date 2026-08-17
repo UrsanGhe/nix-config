@@ -14,7 +14,7 @@
     noctalia.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:nix-community/stylix/release-26.05";
-    stylix.inputs.nixpkgs.follow = "nixpkgs";
+    stylix.inputs.nixpkgs.follows = "nixpkgs";
  
    };
 
