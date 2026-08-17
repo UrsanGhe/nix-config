@@ -38,7 +38,7 @@ in
 	overlays.enable = false;
 
 	polarity = "dark"
-	base165scheme = darkScheme;
+	base165cheme = darkScheme;
 
 	
 	cursor = {
