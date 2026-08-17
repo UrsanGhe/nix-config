@@ -56,7 +56,7 @@
 	  
 	  binds = {
 	    "Super+Space".action.spawn-sh = "noctalia msg panel-toggle launcher";
- 	    "Super+Return".action.spawn = "alacritty";
+ 	    "Super+Return".action.spawn = "ghostty";
  	    "Super+Q".action.close-window = { };
  	    "Super+Left".action.focus-column-left = { };
  	    "Super+Right".action.focus-column-right = { };

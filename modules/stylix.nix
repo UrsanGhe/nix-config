@@ -37,8 +37,8 @@ in
 	autoEnable = true;
 	overlays.enable = false;
 
-	polarity = "dark"
-	base165cheme = darkScheme;
+	polarity = "dark";
+	base16Scheme = darkScheme;
 
 	
 	cursor = {
