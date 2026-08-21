@@ -53,16 +53,16 @@
               { proportion = 0.75; }
               { proportion = 1.0; }
             ];
-	};
+  	  };
 
-	    window-rules = [
-	      {
-                draw-border-with-background = false;
-	        geometry-corner-radius = {
-	          top-left = 4.0;
-	   	  top-right = 4.0;
-		  bottom-left = 4.0;
-	          bottom-right = 4.0;
+	  window-rules = [
+	    {
+              draw-border-with-background = false;
+	      geometry-corner-radius = {
+	        top-left = 4.0;
+	   	top-right = 4.0;
+		bottom-left = 4.0;
+	        bottom-right = 4.0;
 		};
 		clip-to-geometry = true;
 	      }
@@ -89,6 +89,7 @@
 	    "Super+Comma".action.consume-window-into-column = { };
 	    "Super+Period".action.expel-window-from-column = { };
 	  };
+          screenshot-path = "~/Screenshots/screenshot-%Y-%m-%d-%H-%M-%S.png";
         };
       };
     }   
