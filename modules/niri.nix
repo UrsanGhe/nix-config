@@ -53,8 +53,22 @@
               { proportion = 0.75; }
               { proportion = 1.0; }
             ];
-	      
-	  };
+	};
+
+	    window-rules = [
+	      {
+                draw-border-with-background = false;
+	        geometry-corner-radius = {
+	          top-left = 4.0;
+	   	  top-right = 4.0;
+		  bottom-left = 4.0;
+	          bottom-right = 4.0;
+		};
+		clip-to-geometry = true;
+	      }
+  	  ];
+          
+	  
 	  
 	  binds = {
 	    "Super+Space".action.spawn-sh = "noctalia msg panel-toggle launcher";
@@ -66,6 +80,14 @@
  	    "Super+Down".action.focus-workspace-down = { };
  	    "Super+F".action.maximize-column = { };
 	    "Super+Shift+S".action.screenshot = { };
+	    "Super+S".action.switch-preset-column-width = { };
+	    "Super+Shift+F".action.fullscreen-window = { };
+	    "Super+Shift+Left".action.move-column-left = { };
+	    "Super+Shift+Right".action.move-column-right = { };
+	    "Super+Shift+Up".action.move-column-to-workspace-up = { };
+	    "Super+Shift+Down".action.move-column-to-workspace-down = { };
+	    "Super+Comma".action.consume-window-into-column = { };
+	    "Super+Period".action.expel-window-from-column = { };
 	  };
         };
       };
