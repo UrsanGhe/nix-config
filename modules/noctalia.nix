@@ -20,7 +20,34 @@
               end = [ "tray" "volume" "network" "battery" "clock" ];
             };
           };
-        };
+          lockscreen = {
+	    enabled = true;
+	    blurred_desktop = true;
+ 	    blur_intensity = 0.1;
+	    tint_intensity = 0.0;
+	  };
+          
+	  idle = {
+	    pre_action_fade_seconds = 1.0;
+	    behavior = {
+              lock = {
+	        timeout = 3600;
+		action = "lock";
+		enabled = true;
+	      };
+              "screen-off" = {
+ 		timeout = 0;
+		action = "screen_off";
+		enabled = false;
+    	      };
+              suspend = {
+	        timeout = 0;
+		action = "lock_and_suspend";
+		enabled = true;
+	      };
+            };
+          };  
+	};   
       };
     }
   ];
