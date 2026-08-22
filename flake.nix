@@ -15,6 +15,8 @@
 
     stylix.url = "github:nix-community/stylix/release-26.05";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
+
+    awww.url = "git+https://codeberg.org/LGFae/awww";
  
    };
 
