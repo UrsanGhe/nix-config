@@ -5,7 +5,7 @@
   nixpkgs.overlays = [ inputs.niri.overlays.niri ];
 
   programs.niri.enable = true;
-  programs.niri.package = pkgs.niri-stable;
+  programs.niri.package = pkgs.niri-unstable;
 
   environment.systemPackages = with pkgs; [
     alacritty
@@ -13,7 +13,7 @@
     wl-clipboard
     grim
     slurp
-    xwayland-satellite-stable
+    xwayland-satellite-unstable
   ];
 
   services.libinput.enable = true;
@@ -23,7 +23,7 @@
     {
       programs.niri = {
 
-        package = pkgs.niri-stable;
+        package = pkgs.niri-unstable;
         settings = {
   
           spawn-at-startup = [
