@@ -42,9 +42,9 @@ in
 
 	
 	cursor = {
-	  name = "Apple Cursor";
+	  name = "apple-cursor";
 	  package = pkgs.apple-cursor;
-	  size = 24;
+	  size = 7;
 	};
 
 	
@@ -65,7 +65,7 @@ in
             package = pkgs.nerd-fonts.symbols-only;
             name = "Symbols Nerd Font";
           };
-          sizes.terminal = 14;
+          sizes.terminal = 10;
 	};
       };
     }
