@@ -21,6 +21,7 @@
     ../../modules/stylix.nix
     ../../modules/ghostty.nix
     ../../modules/xdg.nix
+    ../../modules/awww.nix
   ];
 
   networking.hostName = "ursan";
