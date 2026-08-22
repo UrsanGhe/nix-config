@@ -41,20 +41,47 @@
    	    default-column-width = {
   	      proportion = 0.5;
 	     };
-           
-	    border = {
-              enable = true;
-	      width = 1;
- 	    };
-            
+
 	    preset-column-widths = [
               { proportion = 0.25; }
               { proportion = 0.5; }
               { proportion = 0.75; }
               { proportion = 1.0; }
             ];
-  	  };
 
+	    focus-ring = {
+	      enable = false;
+	      width = 0;
+	      active.color = "#d8dadd";
+	      inactive.color = "#0a0c10";
+      	    };
+
+	    border = {
+	      enable = true;
+	      width = 1;
+	      active.color = "#d8dadd";
+	      inactive.color = "#0a0c10";
+	    };
+
+	    shadow = {
+	      enable = false;
+	    };
+	  };
+
+	  cursor = {
+            theme = "apple-cursor";
+            size = 7;
+            hide-when-typing = true;
+          };
+
+	  blur = {
+            enable = true;
+            passes = 3;
+            offset = 3.0;
+            noise = 0.02;
+            saturation = 1.5;
+          };
+ 
 	  window-rules = [
 	    {
               draw-border-with-background = false;
