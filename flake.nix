@@ -7,7 +7,7 @@
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    niri.url = "github:sodiboo/niri-flake";
+    niri.url = "github:epireyn/niri-flake";
     niri.inputs.nixpkgs.follows = "nixpkgs";
     
     noctalia.url = "github:noctalia-dev/noctalia-shell";
