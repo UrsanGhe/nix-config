@@ -67,7 +67,7 @@
 	      enable = false;
 	    };
 	  };
-
+	
 	  cursor = {
             theme = "apple-cursor";
             size = 7;
@@ -92,10 +92,32 @@
 	        bottom-right = 4.0;
 		};
 		clip-to-geometry = true;
-	      }
+	    }  
+
   	  ];
           
-	  
+          outputs = {
+            "HDMI-A-1" = {
+              mode = {
+                width = 2560;
+                height = 1440;
+                refresh = 144.0;
+              };
+              position = { x = 0; y = 0; };
+              scale = 1.0;
+              focus-at-startup = true;
+            };
+
+            "DP-2" = {
+              mode = {
+                width = 1920;
+                height = 1080;
+                refresh = 144.0;
+              };
+              position = { x = 2560; y = 0; };
+              scale = 1.0;
+            };
+          };
 	  
 	  binds = {
 	    "Super+Space".action.spawn-sh = "noctalia msg panel-toggle launcher";
