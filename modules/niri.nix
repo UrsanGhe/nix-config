@@ -138,6 +138,10 @@
 	    "Super+Comma".action.consume-window-into-column = { };
 	    "Super+Period".action.expel-window-from-column = { };
 	    "Super+L".action.spawn-sh = "noctalia msg session lock";
+	    "Super+Ctrl+Left".action.focus-monitor-left = { };
+	    "Super+Ctrl+Right".action.focus-monitor-right = { };
+	    "Super+Shift+Ctrl+Left".action.move-column-to-monitor-left = { };
+	    "Super+Shift+Ctrl+Right".action.move-column-to-monitor-right = { };
 	  };
           screenshot-path = "~/Screenshots/screenshot-%Y-%m-%d-%H-%M-%S.png";
         };

@@ -9,6 +9,7 @@
         settings = {
 
           wallpaper.enabled = false;
+	  backdrop.enabled = false;
           dock.enabled = false;
 
 	  theme = {
